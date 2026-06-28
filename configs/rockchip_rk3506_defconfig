@@ -1,0 +1,41 @@
+#include "base/base.config"
+#include "chips/rk3506_arm.config"
+#include "fs/vfat.config"
+#include "wifibt/bt.config"
+#include "wifibt/wireless.config"
+#include "multimedia/audio.config"
+#include "gui/lvgl/lvgl_rkadk.config"
+#include "gui/lvgl/rk_demo.config"
+#include "fs/ubifs.config"
+BR2_PACKAGE_CAN_UTILS=y
+# BR2_PACKAGE_CHRONY is reset to default
+# BR2_PACKAGE_DNSMASQ is reset to default
+# BR2_PACKAGE_DROPBEAR_CLIENT is reset to default
+BR2_PACKAGE_ETHTOOL=y
+BR2_PACKAGE_EVTEST=y
+BR2_PACKAGE_HOST_KMOD=y
+BR2_PACKAGE_IPERF3=y
+BR2_PACKAGE_IPROUTE2=y
+BR2_PACKAGE_IPTABLES=y
+BR2_PACKAGE_IPTABLES_BPF_NFSYNPROXY=y
+BR2_PACKAGE_IPTABLES_NFTABLES=y
+BR2_PACKAGE_LIBCAP=y
+BR2_PACKAGE_LRZSZ=y
+BR2_PACKAGE_MHZ=y
+BR2_PACKAGE_MOSQUITTO=y
+# BR2_PACKAGE_PULSEAUDIO is reset to default
+BR2_PACKAGE_QT5=y
+BR2_PACKAGE_RECOVERY=y
+BR2_PACKAGE_RECOVERY_NO_UI=y
+BR2_PACKAGE_RECOVERY_USE_UPDATEENGINE=y
+BR2_PACKAGE_RIPGREP=y
+BR2_PACKAGE_RKADK_EXAMPLES=y
+BR2_PACKAGE_ROCKCHIP_RGA=y
+BR2_PACKAGE_ROCKCHIP_TEST=y
+BR2_RK_DEMO_ENABLE_ASR=y
+BR2_ROCKCHIP_ALSA_CONFIG_INSTALL_INIT_SCRIPT=y
+BR2_ROOTFS_OVERLAY+="board/rockchip/rk3506/fast-display-overlay/"
+BR2_ROOTFS_POST_BUILD_SCRIPT+="board/rockchip/rk3506/post-build-fast-display.sh"
+# BR2_TARGET_GENERIC_REMOUNT_ROOTFS_RW is not set
+BR2_TARGET_ROOTFS_SQUASHFS4_ZSTD=y
+BR2_TIME_BITS_64=y

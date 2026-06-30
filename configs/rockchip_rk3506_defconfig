@@ -39,3 +39,5 @@ BR2_ROOTFS_POST_BUILD_SCRIPT+="board/rockchip/rk3506/post-build-fast-display.sh"
 # BR2_TARGET_GENERIC_REMOUNT_ROOTFS_RW is not set
 BR2_TARGET_ROOTFS_SQUASHFS4_ZSTD=y
 BR2_TIME_BITS_64=y
+BR2_PRIMARY_SITE="https://mirror.nju.edu.cn/buildroot"
+BR2_BACKUP_SITE="https://sources.buildroot.net"

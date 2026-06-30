@@ -41,3 +41,5 @@ BR2_TARGET_ROOTFS_SQUASHFS4_ZSTD=y
 BR2_TIME_BITS_64=y
 BR2_PRIMARY_SITE="https://mirror.nju.edu.cn/buildroot"
 BR2_BACKUP_SITE="https://sources.buildroot.net"
+BR2_PRIMARY_SITE_ONLY=n
+# BR2_PACKAGE_ROCKCHIP_TEST is not set

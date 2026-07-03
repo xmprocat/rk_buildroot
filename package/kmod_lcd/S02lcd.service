@@ -1,0 +1,13 @@
+[Unit]
+Description=Load ST7789V LCD module
+DefaultDependencies=no
+After=local-fs.target
+Before=systemd-logind.service getty.target
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/insmod /usr/lib/modules/extra/lcd.ko
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target

@@ -14,4 +14,6 @@ for i in "${SH_LV_DEMO}" "${SH_ASYNC_COMMIT}" ; do
 done
 
 # async-commit need first
-mv $TARGET/etc/init.d/pre_init/S05async-commit.sh $TARGET/etc/init.d/pre_init/S00async-commit.sh
+if [ -f "$TARGET/etc/init.d/pre_init/S05async-commit.sh" ]; then
+	mv $TARGET/etc/init.d/pre_init/S05async-commit.sh $TARGET/etc/init.d/pre_init/S00async-commit.sh
+fi

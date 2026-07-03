@@ -1,0 +1,4 @@
+config BR2_PACKAGE_KMOD_LCD
+	bool "kmod_lcd"
+	help
+	  ST7789V LCD kernel module for YJH MiniPDA

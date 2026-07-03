@@ -2893,3 +2893,4 @@ menu "Text editors and viewers"
 endmenu
 
 endmenu
+source "package/kmod_lcd/Config.in"

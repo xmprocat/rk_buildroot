@@ -2894,3 +2894,4 @@ endmenu
 
 endmenu
 source "package/kmod_lcd/Config.in"
+source "package/ysyslogd/Config.in"

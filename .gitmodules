@@ -1,0 +1,3 @@
+[submodule "package/ysyslogd"]
+	path = package/ysyslogd
+	url = git@github.com:xmprocat/ysyslogd.git
